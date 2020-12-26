@@ -12,7 +12,8 @@ STATIC_FILES_PATH = os.path.dirname(
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'w3^el)6d6=m1k!^cn3-o3a!$cac=tkux_(2ra$d+c1fms4w%@_'
+# Generate your own secret key https://miniwebtool.com/django-secret-key-generator/ 
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -63,11 +64,24 @@ WSGI_APPLICATION = 'templatez.configs.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+# https://docs.djangoproject.com/en/2.2/ref/settings/#database
+
+DATABASE_NAME = ''
+DATABASE_USERNAME = ''
+DATABASE_PASSWORD = ''
+DATABASE_HOST = ''
+# configure your port base on your environment setup
+DATABASE_PORT = ''
+
+# LIST OF DATABASE ENGINE 
+DB_SQLITE = 'django.db.backends.sqlite3'
+DB_POSTGRES = 'django.db.backends.postgresql'
+DB_MYSQL =  'django.db.backends.mysql'
+DB_ORACLE = 'django.db.backends.oracle'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': DB_SQLITE,
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
