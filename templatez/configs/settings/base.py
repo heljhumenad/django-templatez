@@ -5,8 +5,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Static files Path
 STATIC_FILES_PATH = os.path.dirname(
-    os.path.dirname(os.path.dirname(os.path.abspath(__file__)
-)))
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
@@ -24,22 +24,22 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
 
     # Add your custom apps here
-    'templatez.apps',
+    "templatez.apps",
 
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'jango.middleware.common.CommonMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -64,24 +64,24 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'templatez.configs.wsgi.application'
+WSGI_APPLICATION = "templatez.configs.wsgi.application"
 
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#database
 
-DATABASE_NAME = ''
-DATABASE_USERNAME = ''
-DATABASE_PASSWORD = ''
-DATABASE_HOST = ''
+DATABASE_NAME = ""
+DATABASE_USERNAME = ""
+DATABASE_PASSWORD = ""
+DATABASE_HOST = ""
 # configure your port base on your environment setup
-DATABASE_PORT = ''
+DATABASE_PORT = ""
 
 # LIST OF DATABASE ENGINE
-DB_SQLITE = 'django.db.backends.sqlite3'
-DB_POSTGRES = 'django.db.backends.postgresql'
-DB_MYSQL =  'django.db.backends.mysql'
-DB_ORACLE = 'django.db.backends.oracle'
+DB_SQLITE = "django.db.backends.sqlite3"
+DB_POSTGRES = "django.db.backends.postgresql"
+DB_MYSQL =  "django.db.backends.mysql"
+DB_ORACLE = "django.db.backends.oracle"
 
 DATABASES = {
     'default': {
