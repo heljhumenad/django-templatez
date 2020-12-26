@@ -12,8 +12,8 @@ STATIC_FILES_PATH = os.path.dirname(
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# Generate your own secret key https://miniwebtool.com/django-secret-key-generator/ 
-SECRET_KEY = ''
+# Generate your own secret key here https://djecrety.ir/ 
+SECRET_KEY = 'v5^12go=-t$4ae=a0-nk5on7_kvdvyb@5gyfj0voprfc18j^$y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -30,12 +30,16 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # Add your custom apps here
+    'templatez.apps',
+
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
+    'jango.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -73,7 +77,7 @@ DATABASE_HOST = ''
 # configure your port base on your environment setup
 DATABASE_PORT = ''
 
-# LIST OF DATABASE ENGINE 
+# LIST OF DATABASE ENGINE
 DB_SQLITE = 'django.db.backends.sqlite3'
 DB_POSTGRES = 'django.db.backends.postgresql'
 DB_MYSQL =  'django.db.backends.mysql'
