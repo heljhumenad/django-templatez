@@ -12,11 +12,11 @@ STATIC_FILES_PATH = os.path.dirname(
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# Generate your own secret key here https://djecrety.ir/ 
+# Generate your own secret key here https://djecrety.ir/
 SECRET_KEY = 'v5^12go=-t$4ae=a0-nk5on7_kvdvyb@5gyfj0voprfc18j^$y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -52,8 +52,15 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(STATIC_FILES_PATH, "templates")],
-        'APP_DIRS': True,
+       # 'APP_DIRS': True,
         'OPTIONS': {
+            # Cached loader to maximize everytime templates rendered
+            'loaders': [
+                'django.template.loaders.cached.loader', [
+                    'django.template.loaders.filesystem.Loader',
+                    'django.template.loaders.app_directories.Loader',
+                ]
+            ],
             'context_processors': [
                 'django.template.context_processors.debug',
                 'django.template.context_processors.request',
