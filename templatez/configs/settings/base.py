@@ -8,9 +8,6 @@ STATIC_FILES_PATH = os.path.dirname(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 )
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
-
 # SECURITY WARNING: keep the secret key used in production secret!
 # Generate your own secret key here https://djecrety.ir/
 SECRET_KEY = 'v5^12go=-t$4ae=a0-nk5on7_kvdvyb@5gyfj0voprfc18j^$y'
