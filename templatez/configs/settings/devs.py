@@ -1,9 +1,17 @@
 from templatez.configs.settings.base import *
 
+
 DEBUG = True
 
+# Add automaticaly machine ip address
+def get_ipaddress():
+    from socket import socket
+    host_name = socket.gethostname()
+    ip_address = socket.gethostbyname(host_name)
+    return ip_address
+
 # You can put your own hostname to test the production base environment
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = [get_ipaddress(), 'localhost', '127.0.0.1']
 
 # Custom INSTALLED_APPS for development environment
 INSTALLED_APPS += []
