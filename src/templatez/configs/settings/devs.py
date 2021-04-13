@@ -5,7 +5,7 @@ DEBUG = True
 
 # Add automaticaly machine ip address
 def get_ipaddress():
-    from socket import socket
+    import socket
     host_name = socket.gethostname()
     ip_address = socket.gethostbyname(host_name)
     return ip_address
