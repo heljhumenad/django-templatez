@@ -1,10 +1,11 @@
-from unittest import TestCase
+import unittest
 
+class BaseTestCase(unittest.TestCase):
 
-class BaseTestCase(TestCase):
-
-    def setUp():
+    def test_acknowledge_host_name(self):
         pass
-    
-    def tearDown():
-        pass
+
+
+
+if __name__ == '__main__':
+    unittest.main()
