@@ -5,10 +5,10 @@ name = "pypi"
 
 [packages]
 django = "==2.2"
-black = "*"
+coverage = "*"
+pytest = "*"
 
 [dev-packages]
-black = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.9"
