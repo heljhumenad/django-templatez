@@ -145,3 +145,12 @@ STATIC_URL = '/static/'
 
 # Handle session cookies if you want to destory at browser close
 SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+
+def get_ip_address():
+    import socket 
+    
+    host_name = socket.gethostname()
+    ip_address = socket.gethostbyname(host_name) # host name of machine
+    return ip_address
+
+ALLOWED_HOSTS = [get_ip_address(), "localhost"]
