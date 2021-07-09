@@ -1,6 +1,11 @@
 ## django-templatez
 A skeleton base templates for running Django + PostgreSQL
-that doesn't hurt your own templating and folder structure
+that doesn't hurt your own templating and folder structure the purpose of this 
+is to breakdown the file structure of django project and use the best 
+setup of the project to solve timely manner in setting up 
+your development environment it aim to automate 
+creation fo devs environment and also in production 
+
 
 # Deployment
 Handle the deployment for running batch Django Project ease to use to create handle the project
@@ -12,8 +17,4 @@ for more info about updates and release. You can get this project by cloning thi
 https://github.com/heljhumenad/django-templatez.git
 
 
-**TODO**
-- Make it more dynamic in cli
-- Color coding for cli
-- Create choice for user in cli
-- Create CLI Backend mode
+
