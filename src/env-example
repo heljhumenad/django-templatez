@@ -1,0 +1,19 @@
+# Configurations sample for environment variables
+# You can add your own configurations specific but change the value of the config 
+# based on what configurations you have 
+# Note. Do not commit this file and put this in ignore files. To avoid sharing sensitive configurations in t
+# internet and avoid risk being hacked
+
+SECRET_KEY = "SECRET_KEY"
+
+# DATABASE CONFIG
+DB_USERNAME = "db_username"
+DB_PASSWORD = "db_password"
+DB_NAME = "db_name"
+DB_PORT = "db_port"
+DB_HOST = "db_host"
+
+# EMAIL CONFIG
+EMAIL_USERNAME = ''
+EMAIL_PORT = ''
+EMAIL_PASSWORD = ''
