@@ -4,11 +4,25 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==2.2"
+django = "*"
 coverage = "*"
 pytest = "*"
+python-decouple = "*"
+
 
 [dev-packages]
+faker = "*"
+factory-boy = "*"
+pytest = "*"
+coverage = "*"
+autopep8 = "*"
+django-debug-toolbar = "*"
+django-extensions = "*"
+pytest-cov = "*"
+pytest-django = "*"
+isort = "*"
+flake8 = "*"
 
-[requires]
-python_version = "3.9"
+[pipenv]
+allow_prerelease = false
+
