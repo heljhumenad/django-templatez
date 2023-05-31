@@ -14,7 +14,6 @@ file structure with minimal inclusion of other apps structure it's create bare b
 It doesnt have any dependencies except for **Django version 2.2** it just clean slate of templates 
 with default setting to up be up and running a django project. You can check also https://www.djangoproject.com/
 for more info about updates and release. You can get this project by cloning this repositories in this link 
-https://github.com/heljhumenad/django-templatez.git
 
 
 
